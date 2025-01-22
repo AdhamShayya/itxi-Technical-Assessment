@@ -2,14 +2,24 @@
 export enum onboardingNames {
   welcome = 'Welcome',
   companyID = 'CompanyID',
-  pickVoice = 'PickVoice'
+  pickVoice = 'PickVoice',
 }
 
 
 export enum homeRoutes {
-  main = 'main',
+  main = 'Main',
 }
 export enum appRoutes {
   onboarding = 'Onboarding',
-  mainRoute = 'MainRoute'
+  mainRoute = 'MainRoute',
+  voiceBot = 'Voicebot',
+  settingsStack = 'SettingsStack'
+}
+
+export enum settingsRoutes {
+  settings = 'Settings',
+  pickVoice = 'PickVoice',
+  setCompanyID = 'SetCompanyID',
+  enterCompanyID = 'EnterCompanyID',
+  companyID = "CompanyID"
 }

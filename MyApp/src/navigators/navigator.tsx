@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './app.navigator';
 import { StyleSheet, View, Image } from 'react-native';
 import { COLORS } from '../styles/colors';
 import { APP_ICON_URL } from '@env';
-import linking from '../../linking';
 
 const Navigator = () => {
   const [isInitializing, setIsInitializing] = useState(true);
@@ -22,18 +20,16 @@ const Navigator = () => {
   if (isInitializing) {
     return (
       <View style={styles.loadingContainer}>
-        <Image
-          source={{ uri: APP_ICON_URL }}
-          style={styles.loadingImage}
+        <Image 
+          source={{ uri: APP_ICON_URL }} 
+          style={styles.loadingImage} 
         />
       </View>
     );
   }
 
   return (
-    <NavigationContainer linking={linking}>
       <AppNavigator />
-    </NavigationContainer>
   );
 };
 

@@ -51,5 +51,5 @@ const PickVoiceScreen = ({ navigation }: { navigation:  NativeStackNavigationPro
       fontWeight: '600',
     },
   });
-
+  
 export default PickVoiceScreen;

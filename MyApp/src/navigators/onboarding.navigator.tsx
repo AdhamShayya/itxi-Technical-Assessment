@@ -9,10 +9,9 @@ const Stack = createNativeStackNavigator();
 
 export const OnboardingNavigator = () => {
   return (
-    <Stack.Navigator
+    <Stack.Navigator 
       screenOptions={{
         headerShown: true,
-        animation: 'slide_from_right',
       }}
     >
       <Stack.Screen
@@ -31,14 +30,12 @@ export const OnboardingNavigator = () => {
           headerBackVisible: true, // to show the back button
         }}
       />
-      <Stack.Screen
+      <Stack.Screen  
         name={onboardingNames.pickVoice}
         component={PickVoiceScreen}
         options={{
           title: 'Pick Voice',
           headerBackVisible: true,
-          presentation: 'modal',
-          gestureDirection: 'vertical',
         }}
       />
     </Stack.Navigator>
