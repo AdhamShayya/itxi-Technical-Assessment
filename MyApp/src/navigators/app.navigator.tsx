@@ -25,6 +25,7 @@ const modalScreenOptions = {
 // Root navigator
 const AppNavigator = () => {
   return (
+    // for deep linking
     <NavigationContainer linking={linking}>
       <RootStack.Navigator initialRouteName="Onboarding">
         <RootStack.Screen
@@ -35,7 +36,10 @@ const AppNavigator = () => {
         <RootStack.Screen
           name={appRoutes.mainRoute}
           component={HomeScreen}
-          options={{ headerShown: false }}
+          options={{
+            headerShown: false,
+            animation: 'slide_from_bottom',  // to show the home from the bottom to the top
+          }}
         />
         {/* to open the setCompanyID through deep linking */}
         <RootStack.Screen

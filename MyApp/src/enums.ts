@@ -21,5 +21,5 @@ export enum settingsRoutes {
   pickVoice = 'PickVoice',
   setCompanyID = 'SetCompanyID',
   enterCompanyID = 'EnterCompanyID',
-  companyID = "CompanyID"
+  companyID = 'CompanyID'
 }

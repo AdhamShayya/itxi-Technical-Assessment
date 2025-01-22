@@ -20,9 +20,9 @@ const Navigator = () => {
   if (isInitializing) {
     return (
       <View style={styles.loadingContainer}>
-        <Image 
-          source={{ uri: APP_ICON_URL }} 
-          style={styles.loadingImage} 
+        <Image
+          source={{ uri: APP_ICON_URL }}
+          style={styles.loadingImage}
         />
       </View>
     );

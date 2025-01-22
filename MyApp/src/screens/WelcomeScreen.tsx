@@ -2,8 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { COLORS } from'../styles/colors';
 import { onboardingNames } from '../enums';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-const WelcomeScreen = ({ navigation }: any) => {
+const WelcomeScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any> }) => {
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>Welcome</Text>

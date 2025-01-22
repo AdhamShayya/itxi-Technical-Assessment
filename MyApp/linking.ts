@@ -1,10 +1,4 @@
 const linking = {
-    prefixes: ['myapp://', 'https://myapp.com'],
-    config: {
-      screens: {
-        Home: 'home',
-
-    },
-    },
-  };
+  prefixes: ['https://test.adhamshayya.im', 'adhamshayya://'],
+};
 export default linking;

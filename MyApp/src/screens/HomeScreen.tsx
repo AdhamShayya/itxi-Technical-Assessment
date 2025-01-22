@@ -1,7 +1,7 @@
 
-import React from 'react'
+import React from 'react';
 
-import { StyleSheet, Text, TouchableOpacity, useWindowDimensions, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { COLORS } from '../styles/colors';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -11,15 +11,15 @@ import { appRoutes } from '../enums';
 const HomeScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any> }) => {
   return (
     <View style={styles.screen}>
-      <TouchableOpacity 
+      <TouchableOpacity
         style={styles.settingsButton}
         onPress={() => navigation.navigate(appRoutes.settingsStack)}
       >
         <FontAwesomeIcon icon={faGear} size={24} color={COLORS.primaryBlue} />
       </TouchableOpacity>
-      
+
       <Text style={styles.title}>Main Screen</Text>
-      
+
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate(appRoutes.voiceBot)}
@@ -27,7 +27,7 @@ const HomeScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any
         <Text style={styles.buttonText}>Launch Voicebot screen</Text>
       </TouchableOpacity>
     </View>
-  )
+  );
 };
 const styles = StyleSheet.create({
   screen: {

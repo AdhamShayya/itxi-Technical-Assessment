@@ -11,10 +11,7 @@ const PickVoiceScreen = ({ navigation }: { navigation:  NativeStackNavigationPro
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            navigation.reset({
-              index: 0,
-              routes: [{ name: appRoutes.mainRoute }],
-            });
+            navigation.navigate(appRoutes.mainRoute);
           }}
         >
           <Text style={styles.buttonText}>Dismiss</Text>
@@ -51,5 +48,5 @@ const PickVoiceScreen = ({ navigation }: { navigation:  NativeStackNavigationPro
       fontWeight: '600',
     },
   });
-  
+
 export default PickVoiceScreen;

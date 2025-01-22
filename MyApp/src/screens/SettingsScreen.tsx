@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS } from '../styles/colors';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { settingsRoutes } from '../enums';
 
 const SettingsScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any> }) => {
   return (
@@ -10,13 +11,13 @@ const SettingsScreen = ({ navigation }: { navigation:  NativeStackNavigationProp
       <Text style={styles.title}>Settings</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('PickVoice')}
+        onPress={() => navigation.navigate(settingsRoutes.pickVoice)}
       >
         <Text style={styles.buttonText}>pick voice screen</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('SetCompanyID')}
+        onPress={() => navigation.navigate(settingsRoutes.setCompanyID)}
       >
         <Text style={styles.buttonText}>Set Company ID</Text>
       </TouchableOpacity>
@@ -57,5 +58,5 @@ const styles = StyleSheet.create({
       zIndex: 1,
     },
   });
-  
-export default SettingsScreen
+
+export default SettingsScreen;

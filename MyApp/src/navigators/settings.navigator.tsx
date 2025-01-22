@@ -1,7 +1,4 @@
-// Settings navigator
-
-
-// Import all screens
+import React from 'react';
 import SettingsScreen from '../screens/SettingsScreen';
 import PickVoiceScreen from '../screens/PickVoiceScreen';
 import SetCompanyIDScreen from '../screens/SetCompanyIdScreen';
@@ -14,28 +11,28 @@ const SettingsStack = createNativeStackNavigator();
 const SettingsNavigator = () => {
     return (
       <SettingsStack.Navigator>
-        <SettingsStack.Screen 
+        <SettingsStack.Screen
           name={settingsRoutes.settings}
           component={SettingsScreen}
           options={{
             title: 'Settings',
           }}
         />
-        <SettingsStack.Screen 
+        <SettingsStack.Screen
           name={settingsRoutes.pickVoice}
           component={PickVoiceScreen}
           options={{
             title: 'Pick Voice',
           }}
         />
-        <SettingsStack.Screen 
+        <SettingsStack.Screen
           name={settingsRoutes.setCompanyID}
           component={SetCompanyIDScreen}
           options={{
             title: 'Set Company ID',
           }}
         />
-        <SettingsStack.Screen 
+        <SettingsStack.Screen
           name={settingsRoutes.enterCompanyID}
           component={EnterCompanyIDScreen}
           options={{

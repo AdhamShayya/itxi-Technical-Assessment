@@ -2,8 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { COLORS } from '../styles/colors';
 import { appRoutes } from '../enums';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-const EnterCompanyIDScreen = ({ navigation }: any) => {
+const EnterCompanyIDScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any> }) => {
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>Enter Company ID</Text>

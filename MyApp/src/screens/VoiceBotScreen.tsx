@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default VoicebotScreen
+export default VoicebotScreen;
