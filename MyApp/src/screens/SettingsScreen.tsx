@@ -11,7 +11,7 @@ const SettingsScreen = ({ navigation }: { navigation:  NativeStackNavigationProp
       <Text style={styles.title}>Settings</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate(settingsRoutes.pickVoice)}
+        onPress={() => navigation.navigate(settingsRoutes.pickVoiceSettings)}
       >
         <Text style={styles.buttonText}>pick voice screen</Text>
       </TouchableOpacity>

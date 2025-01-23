@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { COLORS } from '../styles/colors';
-import { appRoutes } from '../enums';
+import { appRoutes, settingsRoutes } from '../enums';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const EnterCompanyIDScreen = ({ navigation }: { navigation:  NativeStackNavigationProp<any> }) => {
@@ -10,12 +10,9 @@ const EnterCompanyIDScreen = ({ navigation }: { navigation:  NativeStackNavigati
       <Text style={styles.title}>Enter Company ID</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => {navigation.reset({
-                      index: 0,
-                      routes: [{ name: appRoutes.mainRoute }],
-                    });}}
+        onPress={() => navigation.navigate(appRoutes.settingsStack)}
       >
-        <Text style={styles.buttonText}>Go To Home</Text>
+        <Text style={styles.buttonText}>Go To Settings</Text>
       </TouchableOpacity>
     </View>
   );

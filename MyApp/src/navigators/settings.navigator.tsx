@@ -5,6 +5,7 @@ import SetCompanyIDScreen from '../screens/SetCompanyIdScreen';
 import EnterCompanyIDScreen from '../screens/EnterCompanyIdScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { settingsRoutes } from '../enums';
+import PickVoiceSettingsScreen from '../screens/PickVoiceSettings';
 
 const SettingsStack = createNativeStackNavigator();
 
@@ -19,10 +20,10 @@ const SettingsNavigator = () => {
           }}
         />
         <SettingsStack.Screen
-          name={settingsRoutes.pickVoice}
-          component={PickVoiceScreen}
+          name={settingsRoutes.pickVoiceSettings}
+          component={PickVoiceSettingsScreen}
           options={{
-            title: 'Pick Voice',
+            title: 'Pick Voice Settings',
           }}
         />
         <SettingsStack.Screen

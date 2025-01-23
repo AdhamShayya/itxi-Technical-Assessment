@@ -15,9 +15,7 @@ const RootStack = createNativeStackNavigator();
 
 const modalScreenOptions = {
   presentation: 'modal' as const,
-  animation: 'slide_from_bottom' as const,
-  gestureEnabled: true,
-  gestureDirection: 'vertical' as const,
+  animation: 'fade' as const,
   headerShown: false,
 };
 

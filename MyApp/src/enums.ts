@@ -19,6 +19,7 @@ export enum appRoutes {
 export enum settingsRoutes {
   settings = 'Settings',
   pickVoice = 'PickVoice',
+  pickVoiceSettings = 'pickVoiceSettings',
   setCompanyID = 'SetCompanyID',
   enterCompanyID = 'EnterCompanyID',
   companyID = 'CompanyID'
